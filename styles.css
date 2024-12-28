@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Eraser";
+  src: url("fonts/font-eraser.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "Eraser", serif;
+  color: white;
+}
+html {
+  height: 99vh;
+}
+body {
+  height: 99%;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #005045;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#gameboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.cell {
+  width: 6rem;
+  height: 6rem;
+  background-color: #005045;
+  border: none;
+  font-size: 3rem;
+}
+.border-btm {
+  border-bottom: 0.08rem solid white;
+}
+.border-rig {
+  border-right: 0.08rem solid white;
+}
+#restart-btn {
+  background-color: #005045;
+  border: none;
+  margin-bottom: 1rem;
+
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+#title {
+  margin-bottom: 1rem;
+}
+.cell.selected:hover {
+  background-color: #005045;
+}
+.cell:hover {
+  background-color: #025c50;
+}
+#restart-btn:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 500px) {
+  html {
+    max-width: 100vw;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  body {
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+    height: 100%;
+  }
+}
