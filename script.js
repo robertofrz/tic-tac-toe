@@ -23,6 +23,7 @@ function restartGame() {
   document.querySelectorAll(".cell").forEach((item) => {
     item.innerHTML = "";
     item.addEventListener("click", newMove);
+    item.classList.remove("selected");
   });
 }
 

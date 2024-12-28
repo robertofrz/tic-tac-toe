@@ -32,6 +32,7 @@ body {
   background-color: #005045;
   border: none;
   font-size: 3rem;
+  text-align: center;
 }
 .border-btm {
   border-bottom: 0.08rem solid white;
